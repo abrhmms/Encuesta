@@ -1,0 +1,257 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Contenedor principal */
+  .inicio-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Encabezado */
+  .inicio-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .inicio-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3c6e71;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .inicio-subtitle {
+    font-size: 1.2rem;
+    color: #030303;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  /* Imagen */
+  .inicio-image-container {
+    text-align: center;
+    margin-bottom: 30px;
+    height: 720x;
+    width: 300px;
+  display: block;
+  margin: auto;
+  }
+  
+  .inicio-img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Contenido */
+  .inicio-content {
+    text-align: justify;
+  }
+  
+  .inicio-description {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  
+  .inicio-highlight h2 {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .inicio-highlight ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .inicio-highlight li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .inicio-conclusion {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 30px;
+    text-align: justify;
+  }
+  
+  /* Agregar un efecto de hover para las listas */
+  .inicio-highlight li:hover {
+    color: #04373a;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+/* Estilos para el título */
+.inicio-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #3c6e71;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Agregar una animación de subrayado y efecto de aparición */
+  .inicio-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: #0d0e0d;
+    transition: width 0.5s ease;
+  }
+  
+  /* Efecto de subrayado al pasar el ratón */
+  .inicio-title:hover::before {
+    width: 100%;
+  }
+  
+  /* Resaltar las palabras 'Toma de' y 'Conductuales' */
+  .highlight-text {
+    color: #0b0b0b;
+    font-style: italic;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efecto de hover para resaltar */
+  .inicio-title:hover .highlight-text {
+    transform: scale(1.1); /* Hace que el texto resalte al pasar el ratón */
+  }
+  
+  /* Efecto de animación de aparición para el título */
+  .inicio-title {
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .inicio-subtitle {
+    font-weight: bold; /* Aplica negrita a todo el texto dentro del p */
+  }
+  
+
+  /* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+}
+
+.inicio-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.inicio-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inicio-subtitle {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Estilos del formulario */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Reducir el interlineado */
+}
+
+.pregunta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Reducir el espacio entre preguntas */
+}
+
+.pregunta p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Estilos para los labels */
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* Estilo de los botones */
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center; /* Centrar el botón */
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para los mensajes de error */
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,61 @@
+/* Estilos para el header */
+header {
+  display: flex; /* Usamos flexbox para alinear los elementos */
+  align-items: center; /* Alinea verticalmente el icono y el título */
+  justify-content: center; /* Centra todo horizontalmente */
+  padding: 20px;
+  background-image: url('https://www.hogrefe.com/index.php?eID=dumpFile&t=p&p=235002&token=ac6277b9fab23f9bc722065b4951be8894dbce88'); /* Fondo con la nueva imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el header */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  position: relative; /* Asegura que el header tenga un contexto de posición */
+}
+
+/* Estilo para el icono de cerebro */
+header .brain-icon {
+  font-size: 3.5rem;  /* Tamaño grande del icono */
+  color: #1e3a8a;  /* Color azul elegante */
+  transition: transform 0.3s ease;  /* Efecto de transición para el hover */
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Empieza en su posición original */
+  }
+  20% {
+    transform: translateY(-10px); /* Sube un poco */
+  }
+  50% {
+    transform: translateY(0); /* Vuelve a la posición original */
+  }
+  70% {
+    transform: translateY(-5px); /* Un pequeño rebote hacia arriba */
+  }
+  100% {
+    transform: translateY(0); /* Termina en la posición original */
+  }
+}
+
+header h1 {
+  font-family: 'Dancing Script', cursive;  /* Fuente cursiva elegante */
+  font-size: 3rem;  /* Tamaño grande para el título */
+  font-weight: bold;  /* Negrita para el título */
+  color: #333;  /* Color oscuro para el texto */
+  margin-left: 10px;  /* Espacio entre el icono y el título */
+  animation: bounce 1s ease infinite; /* Animación de rebote en loop */
+  white-space: nowrap; /* Evita que el texto se divida */
+  transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Hover para el título */
+header h1:hover {
+  color: #f9f9f9;  /* Color azul cuando pasa el mouse */
+}
+
+/* Hover para el icono */
+header .brain-icon:hover {
+  transform: scale(1.2);  /* Aumenta el tamaño del icono al pasar el mouse */
+  color: #f9f9f9;  /* Azul elegante cuando el icono se pasa el mouse */
+}

@@ -1,0 +1,78 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos globales */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Estilos para contenedor principal */
+  .app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo para los enlaces del menú */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #070807;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  nav ul li {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo de las secciones */
+  section {
+    margin: 20px 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+    border-radius: 5px;
+  }
+  
